@@ -1,7 +1,6 @@
 import { Body, Controller, Get, Param, ParseIntPipe, Post } from "@nestjs/common";
 import { EmployeeService } from "./employee.service";
 import { Employee } from "../enteties/employee.entity";
-import { Assigment } from "../enteties/assigment.entity";
 
 @Controller()
 export class EmployeeController {

@@ -42,11 +42,11 @@ export class AssigmentSubscriberService implements EntitySubscriberInterface<Ass
         relations: ['assigment'],
         where: {
           id: event.entity.connectableId,
-        }
+        },
       });
 
       // recalculate total for all employee
-      for (let employee of employees) {
+      for (const employee of employees) {
         // exclude current assigment with old value (cause beforeUpdate hook) and replace it with the one which is updated
         const total = [
           ...employee?.assigment.filter(assigment => assigment.id !== event.entity.id),

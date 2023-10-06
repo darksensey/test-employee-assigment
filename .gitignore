@@ -4,6 +4,7 @@
 /back-end/dist
 /back-end/.git
 /back-end/.gitignore
+/node_modules
 
 # Logs
 logs
