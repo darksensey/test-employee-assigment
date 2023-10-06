@@ -1,0 +1,17 @@
+version: '3.7'
+
+services:
+  test-db:
+    image: postgres
+    container_name: test-db
+    ports:
+      - 5432:5432
+    environment:
+      POSTGRES_USER: db_user
+      POSTGRES_PASSWORD: db_pass
+      POSTGRES_DB: test-pg-db
+      TZ: Europe/Paris
+    networks:
+      - test-net
+networks:
+  test-net:

@@ -1,0 +1,102 @@
+{
+	"info": {
+		"_postman_id": "fffa1ca3-5d99-494e-9951-dba6196ecbec",
+		"name": "test-back-end",
+		"schema": "https://schema.getpostman.com/json/collection/v2.0.0/collection.json",
+		"_exporter_id": "2279478"
+	},
+	"item": [
+		{
+			"name": "Get many assigment",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/assigment"
+			},
+			"response": []
+		},
+		{
+			"name": "Get many contractors",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/contractor"
+			},
+			"response": []
+		},
+		{
+			"name": "Get many employee",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/contractor"
+			},
+			"response": []
+		},
+		{
+			"name": "Get one assigment",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/assigment/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Get one employee",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/assigment/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Get one contractor",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": "http://localhost:3000/assigment/1"
+			},
+			"response": []
+		},
+		{
+			"name": "update Assigment",
+			"request": {
+				"method": "PATCH",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"rnDPercentage\": 80\n}"
+				},
+				"url": "http://localhost:3000/assigment/1"
+			},
+			"response": []
+		},
+		{
+			"name": "Create Assigment",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"connectableType\": \"employee\",\n    \"months\": 2,\n    \"connectableId\": 2,\n    \"projectId\": 1,\n    \"rnDPercentage\": 40\n}"
+				},
+				"url": "http://localhost:3000/assigment"
+			},
+			"response": []
+		}
+	]
+}
